@@ -35,4 +35,10 @@ summary
 -> they allow you to use react feature without having to write a class
 -> avoid the whole confusion with 'this' keyword
 -> allow you to reuse stateful logic
--> organize the logic inside a component into reusable isolated units 
+-> organize the logic inside a component into reusable isolated units
+
+Rule of Hooks
+"only call Hooks at the Top lvel"
+-> don't call hooks inside loops,condtions, or nested functions
+"only call Hooks from react functions"
+call them from within react functional components and not just any regular Javascript function
