@@ -41,7 +41,7 @@ Rule of Hooks
 "only call Hooks at the Top lvel"
 -> don't call hooks inside loops,condtions, or nested functions
 "only call Hooks from react functions"
-call them from within react functional components and not just any regular Javascript function
+-> call them from within react functional components and not just any regular Javascript function
 
 Summary useState
 -> the useState hook lets you add state to functional components
@@ -51,3 +51,7 @@ Summary useState
 -> the first element is the current value of the state, and the second element is state setter function
 -> new state value depends o the previous state?you can pass a function to the setter function
 -> when dealing with objects or arrays, always make sure to spread your state variable and then call the setter function
+
+useEffect
+-> the effect hookslets you perform side effects in functional components
+-> it is a close resplacement for componentDidMount, componentDidUpdate and componentDidUnmount
