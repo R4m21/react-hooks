@@ -1,12 +1,20 @@
 import React from "react";
-import { UserContext } from "./ComponentC";
+import { LastContext, UserContext } from "./ComponentC";
 
 function ComponentF() {
   return (
     <div>
       component f
       <UserContext.Consumer>
-        {(user) => <div>user : {user}</div>}
+        {(user) => (
+          <LastContext>
+            {(last) => (
+              <div>
+                user : {user} , last : {last}
+              </div>
+            )}
+          </LastContext>
+        )}
       </UserContext.Consumer>
     </div>
   );
