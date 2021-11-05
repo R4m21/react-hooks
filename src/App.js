@@ -1,6 +1,7 @@
 import './App.css';
+import DataFetching3 from './components/DataFetching3';
 // import DataFetching from './components/DataFetching';
-import DataFetching2 from './components/DataFetching2';
+// import DataFetching2 from './components/DataFetching2';
 // import IntervalClassCounter from './components/IntervalClassCounter';
 // import IntervalHookCounter from './components/IntervalHookCounter';
 // import ClassMouse from './components/ClassMouse';
@@ -28,7 +29,8 @@ function App() {
     {/* <IntervalClassCounter/>
     <IntervalHookCounter/> */}
     {/* <DataFetching/> */}
-    <DataFetching2/>
+    {/* <DataFetching2/> */}
+    <DataFetching3/>
     </div>
   );
 }
