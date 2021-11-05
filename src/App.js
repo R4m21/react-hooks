@@ -1,5 +1,6 @@
 import './App.css';
-import DataFetching3 from './components/DataFetching3';
+import ComponentC from './components/ComponentC';
+// import DataFetching3 from './components/DataFetching3';
 // import DataFetching from './components/DataFetching';
 // import DataFetching2 from './components/DataFetching2';
 // import IntervalClassCounter from './components/IntervalClassCounter';
@@ -30,7 +31,8 @@ function App() {
     <IntervalHookCounter/> */}
     {/* <DataFetching/> */}
     {/* <DataFetching2/> */}
-    <DataFetching3/>
+    {/* <DataFetching3/> */}
+    <ComponentC/>
     </div>
   );
 }
