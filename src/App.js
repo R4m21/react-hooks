@@ -1,10 +1,11 @@
 import React, { useReducer } from "react";
 import "./App.css";
+import DataFetching1 from "./components/fetching data with useReducer/DataFetching1";
 // import CounterR2 from './components/CounterR2';
 // import CounterR3 from './components/CounterR3';
-import ComponentA from "./components/useReducer with useContext/ComponentA";
-import ComponentB from "./components/useReducer with useContext/ComponentB";
-import ComponentC from "./components/useReducer with useContext/ComponentC";
+// import ComponentA from "./components/useReducer with useContext/ComponentA";
+// import ComponentB from "./components/useReducer with useContext/ComponentB";
+// import ComponentC from "./components/useReducer with useContext/ComponentC";
 // import ComponentC from './components/ComponentC';
 // import CounterR1 from './components/CounterR1';
 // import DataFetching3 from './components/DataFetching3';
@@ -22,24 +23,24 @@ import ComponentC from "./components/useReducer with useContext/ComponentC";
 // import HookCounter from './components/HookCounter';
 // import HookCounterTwo from './components/HookCounterTwo';
 
-export const CountContext = React.createContext();
+// export const CountContext = React.createContext();
 
-const initialState = 0;
-const reducer = (state, action) => {
-  switch (action) {
-    case "increment":
-      return state + 1;
-    case "decrement":
-      return state - 1;
-    case "reset":
-      return initialState;
-    default:
-      return state;
-  }
-};
+// const initialState = 0;
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case "increment":
+//       return state + 1;
+//     case "decrement":
+//       return state - 1;
+//     case "reset":
+//       return initialState;
+//     default:
+//       return state;
+//   }
+// };
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState);
+  // const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="App">
       {/* <ClassCounter/> */}
@@ -60,7 +61,7 @@ function App() {
       {/* <CounterR1/> */}
       {/* <CounterR2/> */}
       {/* <CounterR3/> */}
-      <CountContext.Provider
+      {/* <CountContext.Provider
         value={{ countState: count, countDispatch: dispatch }}
       >
         <div>
@@ -69,7 +70,9 @@ function App() {
           <ComponentB />
           <ComponentC />
         </div>
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+
+      <DataFetching1 />
     </div>
   );
 }
