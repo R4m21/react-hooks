@@ -78,7 +78,8 @@ reduce in JavaScript                             | useReducer in React
 ----------------------------------------------------------------------------------------------------------
 -> array.reduce(reducer,intialValue)             | -> useReducer(reducer,intialState)
 -> singleValue = reducer(accumulator,itemValue)  | -> newState = reducer(currentState, action)
-reduce method return a single value              | useReducer return a pair of values, [newState,dispatch]
+-> reduce method return a single value           | -> useReducer return a pair of values, [newState,dispatch]
+----------------------------------------------------------------------------------------------------------
 
 useReducer Summary
 -> useReducer is a hook that is used for state management in React
@@ -89,4 +90,15 @@ useReducer Summary
 useReducer with useContext
 -> useReducer - Local state management
 -> share state between components - Global state management
--> useReducer + useContext  
+-> useReducer + useContext
+
+useState vs useReducer
+----------------------------------------------------------------------------------------------------------
+scenario                          |  useState                    |  useReducer
+----------------------------------------------------------------------------------------------------------
+-> type of state                  | -> Number, String, Boolean   | -> Object or Array
+-> Number of state transitions    | -> One or Two                | -> Too many
+-> related state transitions?     | -> No                        | -> Yes
+-> business logic                 | -> no business logic         | -> complex business logic
+-> Local vs Global                | -> Local                     | -> Global
+----------------------------------------------------------------------------------------------------------
