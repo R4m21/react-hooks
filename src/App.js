@@ -1,6 +1,8 @@
-import React, { useReducer } from "react";
+import React from "react";
+// import React, { useReducer } from "react";
 import "./App.css";
-import DataFetching1 from "./components/fetching data with useReducer/DataFetching1";
+// import DataFetching1 from "./components/fetching data with useReducer/DataFetching1";
+import DataFetching2 from "./components/fetching data with useReducer/DataFetching2";
 // import CounterR2 from './components/CounterR2';
 // import CounterR3 from './components/CounterR3';
 // import ComponentA from "./components/useReducer with useContext/ComponentA";
@@ -72,7 +74,8 @@ function App() {
         </div>
       </CountContext.Provider> */}
 
-      <DataFetching1 />
+      {/* <DataFetching1 /> */}
+      <DataFetching2/>
     </div>
   );
 }
