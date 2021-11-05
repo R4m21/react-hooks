@@ -55,3 +55,6 @@ Summary useState
 useEffect
 -> the effect hookslets you perform side effects in functional components
 -> it is a close resplacement for componentDidMount, componentDidUpdate and componentDidUnmount
+
+Context
+-> context provides a way to pass data through the component tree without having to pass props down manually at every level.
