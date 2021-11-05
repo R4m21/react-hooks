@@ -102,3 +102,9 @@ scenario                          |  useState                    |  useReducer
 -> business logic                 | -> no business logic         | -> complex business logic
 -> Local vs Global                | -> Local                     | -> Global
 ----------------------------------------------------------------------------------------------------------
+
+useCallback Hook
+what?
+-> useCallback is a hook that will return a memorized version of the callback function that only change if one of the dependencies has changed.
+why?
+-> it is useful when passing callbacks to optimized child components that rely on refrence equality-to prevent unnecessary renders.

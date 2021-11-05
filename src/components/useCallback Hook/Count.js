@@ -10,4 +10,4 @@ function Count(props) {
     )
 }
 
-export default Count
+export default React.memo(Count)
