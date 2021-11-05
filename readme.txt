@@ -85,3 +85,8 @@ useReducer Summary
 -> useReducer is relate to reducer functions
 -> useReducer(reducer,intialState)
 -> reducer(currentState,action)
+
+useReducer with useContext
+-> useReducer - Local state management
+-> share state between components - Global state management
+-> useReducer + useContext  
