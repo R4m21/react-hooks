@@ -1,6 +1,7 @@
 import './App.css';
+import CounterR2 from './components/CounterR2';
 // import ComponentC from './components/ComponentC';
-import CounterR1 from './components/CounterR1';
+// import CounterR1 from './components/CounterR1';
 // import DataFetching3 from './components/DataFetching3';
 // import DataFetching from './components/DataFetching';
 // import DataFetching2 from './components/DataFetching2';
@@ -34,7 +35,8 @@ function App() {
     {/* <DataFetching2/> */}
     {/* <DataFetching3/> */}
     {/* <ComponentC/> */}
-    <CounterR1/>
+    {/* <CounterR1/> */}
+    <CounterR2/>
     </div>
   );
 }
