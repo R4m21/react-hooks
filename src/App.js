@@ -1,9 +1,11 @@
 import React from "react";
 // import React, { useReducer } from "react";
 import "./App.css";
+import ClassTimer from "./components/useRef Hook/ClassTimer";
+import HookTimer from "./components/useRef Hook/HookTimer";
 // import ParentComponent from "./components/useCallback Hook/ParentComponent";
 // import Counter from "./components/useMemo Hook/Counter";
-import FocusInput from "./components/useRef Hook/FocusInput";
+// import FocusInput from "./components/useRef Hook/FocusInput";
 // import DataFetching1 from "./components/fetching data with useReducer/DataFetching1";
 // import DataFetching2 from "./components/fetching data with useReducer/DataFetching2";
 // import DataFetching3 from "./components/fetching data with useReducer/DataFetching3";
@@ -83,7 +85,9 @@ function App() {
       {/* <DataFetching3/> */}
       {/* <ParentComponent/> */}
       {/* <Counter/> */}
-      <FocusInput/>
+      {/* <FocusInput/> */}
+      <ClassTimer/>
+      <HookTimer/>
     </div>
   );
 }
