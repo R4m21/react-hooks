@@ -1,7 +1,8 @@
 import React from "react";
 // import React, { useReducer } from "react";
 import "./App.css";
-import ParentComponent from "./components/useCallback Hook/ParentComponent";
+// import ParentComponent from "./components/useCallback Hook/ParentComponent";
+import Counter from "./components/useMemo Hook/Counter";
 // import DataFetching1 from "./components/fetching data with useReducer/DataFetching1";
 // import DataFetching2 from "./components/fetching data with useReducer/DataFetching2";
 // import DataFetching3 from "./components/fetching data with useReducer/DataFetching3";
@@ -79,7 +80,8 @@ function App() {
       {/* <DataFetching1 /> */}
       {/* <DataFetching2/> */}
       {/* <DataFetching3/> */}
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+      <Counter/>
     </div>
   );
 }
