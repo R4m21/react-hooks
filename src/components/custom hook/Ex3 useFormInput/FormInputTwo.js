@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
+import useFormInput from './Hook/useFormInput'
 
 function FormInputTwo() {
-    const [firstName, setFirstName] = useState('')
-    const [lastName, setLastName] = useState('')
+    const [firstName,bindFirstName,resetFirstName] = useFormInput('')
+    const [lastName,bindLastName,resetLastName] = useFormInput('')
     const submitHandler = e => {
         e.preventDefault()
+        resetFirstName()
+        resetLastName()
         alert(`Hello ${firstName} ${lastName}`)
     }
     return (
@@ -12,11 +15,11 @@ function FormInputTwo() {
         <form onSubmit={submitHandler}>
             <div>
                 <label>First Name</label>&nbsp;&nbsp;
-                <input type="text" value={firstName} onChange={e => setFirstName(e.target.value)}></input>
+                <input type="text" {...bindFirstName}></input>
             </div>
             <div>
                 <label>Last Name</label>&nbsp;&nbsp;
-                <input type="text" value={lastName} onChange={e => setLastName(e.target.value)}></input>
+                <input type="text" {...bindLastName}></input>
             </div>
             <button>Submit</button>
             {/* <input type="submit"/> */}
