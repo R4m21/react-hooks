@@ -1,8 +1,10 @@
 import React from "react";
 // import React, { useReducer } from "react";
 import "./App.css";
-import ClassTimer from "./components/useRef Hook/ClassTimer";
-import HookTimer from "./components/useRef Hook/HookTimer";
+import DocumentTitleOne from "./components/custom hook/Ex1 useDocumentTitle/DocumentTitleOne";
+import DocumentTitleTwo from "./components/custom hook/Ex1 useDocumentTitle/DocumentTitleTwo";
+// import ClassTimer from "./components/useRef Hook/ClassTimer";
+// import HookTimer from "./components/useRef Hook/HookTimer";
 // import ParentComponent from "./components/useCallback Hook/ParentComponent";
 // import Counter from "./components/useMemo Hook/Counter";
 // import FocusInput from "./components/useRef Hook/FocusInput";
@@ -86,8 +88,10 @@ function App() {
       {/* <ParentComponent/> */}
       {/* <Counter/> */}
       {/* <FocusInput/> */}
-      <ClassTimer/>
-      <HookTimer/>
+      {/* <ClassTimer/>
+      <HookTimer/> */}
+      <DocumentTitleOne/>
+      <DocumentTitleTwo/>
     </div>
   );
 }
