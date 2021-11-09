@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React  from 'react'
+import useCounter from './Hook/useCounter'
 
 function CounterTwo() {
-    const [count, setCount] = useState(0)
-    const increment = () => setCount(prevState => prevState+1)
-    const decrement = () => setCount(prevState => prevState-1)
-    const reset = () => setCount(0)
+    const [count,increment,decrement,reset] = useCounter(12,10)
     return (
         <div>
         <h2>Count = {count}</h2>
