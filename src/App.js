@@ -1,8 +1,10 @@
 import React from "react";
 // import React, { useReducer } from "react";
 import "./App.css";
-import CounterOne from "./components/custom hook/Ex2 useCounter/CounterOne";
-import CounterTwo from "./components/custom hook/Ex2 useCounter/CounterTwo";
+// import CounterOne from "./components/custom hook/Ex2 useCounter/CounterOne";
+// import CounterTwo from "./components/custom hook/Ex2 useCounter/CounterTwo";
+import FormInputOne from "./components/custom hook/Ex3 useFormInput/FormInputOne";
+import FormInputTwo from "./components/custom hook/Ex3 useFormInput/FormInputTwo";
 // import DocumentTitleOne from "./components/custom hook/Ex1 useDocumentTitle/DocumentTitleOne";
 // import DocumentTitleTwo from "./components/custom hook/Ex1 useDocumentTitle/DocumentTitleTwo";
 // import ClassTimer from "./components/useRef Hook/ClassTimer";
@@ -94,8 +96,10 @@ function App() {
       <HookTimer/> */}
       {/* <DocumentTitleOne/>
       <DocumentTitleTwo/> */}
-      <CounterOne/>
-      <CounterTwo/>
+      {/* <CounterOne/>
+      <CounterTwo/> */}
+      <FormInputOne/>
+      <FormInputTwo/>
     </div>
   );
 }
